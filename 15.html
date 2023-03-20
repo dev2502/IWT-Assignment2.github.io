@@ -1,0 +1,54 @@
+<!--  Create Write an external style sheet to format the web document of Exercise 1 to apply 
+following effects:
+a. Put a background color and image with gradient overlay.
+b. Make h1 heading 30px, bolder, use color according to your background.
+c. Paragraphs should have font size 15px and choose color according to background.
+d. Increase line spacing in paragraph text.
+e. Highlight important words and use styling for that.
+f. Make h2 heading 20px and choose color according to background.-->
+
+<html>
+    <head>
+        <title>
+            week 3
+        </title>
+        <style>
+         body{
+            background-color: rgba(197, 150, 103, 0.705);
+            background-image:radial-gradient(rgba(13, 17, 244, 0.63), rgba(0, 251, 75, 0.55),rgba(243, 17, 51, 0.676)),url("pup.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+         } 
+         p{
+            text-align: center;
+            vertical-align: middle;
+            color:rgb(11, 35, 66);
+            font-family: 'Courier New', Courier, monospaces;
+            font-size: 15px;
+            line-height: 30px;
+         }   
+         h1{
+            color:rgb(0, 0, 0);
+            font-size: 30px;
+            
+            
+         }      
+         u{
+            color:aqua;
+         }  
+        </style>
+    </head>
+    <body>
+        <h1>
+            The internet
+        </h1>
+        <p>
+            A <b>network is a group of connected, communicating devices </b>such as computers and
+            printers. An <u>internet</u>(note the lowercase i) is two or more networks that can
+            communicate with each other. The most notable internet is called the <u> Inter composed
+            of hundreds of thousands of <i> interconnected </i>networks<u>.
+        </p>
+
+    </body>
+</html>

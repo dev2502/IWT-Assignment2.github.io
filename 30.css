@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(243, 184, 235);
+}
+
+h1{
+    text-align: center;
+    color: rgb(115, 1, 126);
+    text-decoration: dotted;
+    font-size: 500%; 
+}
+
+form{
+    justify-content: center;
+    display: flex;
+}
+
+label{
+    font-size: 200%;
+}
+
+input{
+    color: rgb(145, 23, 114);
+    border-radius: 0;
+    border-bottom-style: solid;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    font-size: 200%;
+    width: 7%;
+    box-shadow: none;
+    background-color: rgb(243, 184, 235) ;
+}
+
+/* ssubmit the guess button */
+.submit{
+    margin-left: 43%;
+    background-color: rgb(180, 52, 148);
+    color: rgb(238, 201, 236);
+    border-radius: 0;
+    border-style: none;
+    padding: 1%;
+    margin-top: 2%;
+    font-size: 110%;
+}
+
+.submit:hover{
+    background-color: rgb(238, 201, 236) ;
+    color: rgb(180, 52, 148);
+    cursor: pointer;
+}
+
+
+
+p{
+    color: rgb(235, 20, 20);
+    font-size: 300%;
+    text-align: center;
+}

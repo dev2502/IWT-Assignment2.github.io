@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Timer Demo</title>
+  </head>
+  <body>
+    <h1>Timer Demo</h1>
+    <p id="timer">0 seconds</p>
+    <button id="startButton">Start</button>
+    <button id="stopButton">Stop</button>
+
+    <script>
+      var startTime;
+      var timerInterval;
+
+      function startTimer() {
+        startTime = Date.now();
+        timerInterval = setInterval(updateTimer, 1000);
+      }
+
+      function stopTimer() {
+        clearInterval(timerInterval);
+      }
+
+      function updateTimer() {
+        var elapsedTime = Math.floor((Date.now() - startTime) / 1000);
+        var timerElement = document.getElementById("timer");
+        timerElement.innerHTML = elapsedTime + " seconds";
+      }
+
+      var startButton = document.getElementById("startButton");
+      startButton.addEventListener("click", startTimer);
+
+      var stopButton = document.getElementById("stopButton");
+      stopButton.addEventListener("click", stopTimer);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+#para1{
+    
+    border: solid black;
+    background-color: rgb(110, 110, 175);
+    padding:5%;
+    float: left;
+
+}
+
+#para2{
+    
+    border: 10%;
+    border-style: dotted;
+    border-radius: 2px;
+    background-color: rgb(201, 180, 152);
+    float: left;
+    padding:5%;
+    margin-left: 2%;
+}
+
+#head{
+    font: bold;
+}
+
+div{
+    float:left;
+    width:30%
+}

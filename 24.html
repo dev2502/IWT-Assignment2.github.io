@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temp Converter</title>
+    <script src="24.js"></script>
+</head>
+<body>
+
+    <h1>Temperature Converter</h1>
+
+    <form>
+   
+        <!-- take input temprature -->
+        <label for="inputTemp" >Enter Temperature:</label>
+        <input type="number" name="input" oninput="Convert()">
+
+        <!-- input option -->
+       <select name="inputOption" id="inputOption" onchange="Convert()">
+            <option value="C">Celsius</option>
+            <option value="F">Fahrenheit</option>
+            <option value="K">Kelvin</option>
+        </select>
+        <br><br>
+
+        <!-- output option   -->
+        <label for="outputTemp">Unit of converted Temperature: </label>
+        <select name="outputOption" id="outputOption" onchange="Convert()">
+            <option value="C">Celsius</option>
+            <option value="F">Fahrenheit</option>
+            <option value="K">Kelvin</option>
+        </select>
+        <br><br>
+
+    </form>
+
+    <!-- CONVERT BUTTON  -->
+    <!-- <button onclick="Convert()">Convert</button> -->
+   
+    <p id="result"> </p>
+
+</body>
+</html>
+
